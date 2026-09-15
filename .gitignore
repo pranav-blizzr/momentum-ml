@@ -1,0 +1,27 @@
+# secrets (the template .env.example is committed)
+.env
+.env.*
+!.env.example
+
+# environment
+.venv/
+
+# large or generated folders at the repo root only
+/data/
+/models/
+/dist/
+/build/
+*.egg-info/
+
+# experiment tracking (MLflow's local store)
+/mlruns/
+/mlflow.db
+
+# Python and tool caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store
